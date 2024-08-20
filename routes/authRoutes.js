@@ -1,12 +1,5 @@
 const express = require('express');
-const firebaseConfig = {
-    apiKey: "AIzaSyDRGJ4_fUs_D2XFz4VxAHYrjY2z3FVw3ug",
-    authDomain: "vams-181c6.firebaseapp.com",
-    projectId: "vams-181c6",
-    storageBucket: "vams-181c6.appspot.com",
-    messagingSenderId: "499943126450",
-    appId: "1:499943126450:web:25103cdbd36c3939cfa0ab"
-  };
+const firebaseConfig = require('../index');
 const router = express.Router();
 
 const { initializeApp } = require('firebase/app');
